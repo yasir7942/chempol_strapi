@@ -69,18 +69,6 @@ export interface SeoProductReview extends Schema.Component {
   };
 }
 
-export interface LayoutTsdlist extends Schema.Component {
-  collectionName: 'components_layout_tsdlists';
-  info: {
-    displayName: 'tsdlist';
-    icon: 'bulletList';
-    description: '';
-  };
-  attributes: {
-    listText: Attribute.Text;
-  };
-}
-
 export interface LayoutTopBanner extends Schema.Component {
   collectionName: 'components_layout_top_banners';
   info: {
@@ -170,7 +158,6 @@ declare module '@strapi/types' {
       'seo.schema-list': SeoSchemaList;
       'seo.product-schema': SeoProductSchema;
       'seo.product-review': SeoProductReview;
-      'layout.tsdlist': LayoutTsdlist;
       'layout.top-banner': LayoutTopBanner;
       'layout.text-image': LayoutTextImage;
       'layout.heading-text': LayoutHeadingText;
