@@ -1,0 +1,53 @@
+{
+  "kind": "singleType",
+  "collectionName": "lubricant_additives_uaes",
+  "info": {
+    "singularName": "lubricant-additives-uae",
+    "pluralName": "lubricant-additives-uaes",
+    "displayName": "LubricantAdditivesUae",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "text1": {
+      "type": "component",
+      "repeatable": false,
+      "component": "layout.heading-text"
+    },
+    "text2": {
+      "type": "component",
+      "repeatable": false,
+      "component": "layout.heading-text"
+    },
+    "textimage1": {
+      "type": "component",
+      "repeatable": false,
+      "component": "layout.text-image"
+    },
+    "whyUs": {
+      "type": "component",
+      "repeatable": true,
+      "component": "layout.heading-text-icon"
+    },
+    "faq": {
+      "type": "component",
+      "repeatable": true,
+      "component": "layout.faq"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "seo.seo-infomation"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_layout_tsdlists",
+  "info": {
+    "displayName": "tsdlist",
+    "icon": "bulletList",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "listText": {
+      "type": "text"
+    }
+  }
+}

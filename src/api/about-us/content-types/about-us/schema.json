@@ -1,0 +1,70 @@
+{
+  "kind": "singleType",
+  "collectionName": "about_uses",
+  "info": {
+    "singularName": "about-us",
+    "pluralName": "about-uses",
+    "displayName": "AboutUs",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "slug": {
+      "type": "uid",
+      "required": true
+    },
+    "banner": {
+      "type": "component",
+      "repeatable": false,
+      "component": "layout.top-banner"
+    },
+    "aboutus": {
+      "displayName": "TextImage",
+      "type": "component",
+      "repeatable": false,
+      "component": "layout.text-image"
+    },
+    "ourFocus": {
+      "type": "text"
+    },
+    "facility": {
+      "type": "text"
+    },
+    "commitment": {
+      "type": "text"
+    },
+    "overValues": {
+      "type": "component",
+      "repeatable": true,
+      "component": "layout.heading-text"
+    },
+    "ourMission": {
+      "type": "component",
+      "repeatable": false,
+      "component": "layout.text-image"
+    },
+    "overVisson": {
+      "type": "component",
+      "repeatable": false,
+      "component": "layout.text-image"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "seo.seo-infomation"
+    },
+    "coreValue": {
+      "type": "component",
+      "repeatable": false,
+      "component": "layout.text-image"
+    },
+    "qualities": {
+      "type": "component",
+      "repeatable": true,
+      "component": "layout.text-image"
+    }
+  }
+}
