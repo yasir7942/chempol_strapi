@@ -52,6 +52,20 @@
       "relation": "manyToMany",
       "target": "api::product.product",
       "mappedBy": "product_categories"
+    },
+    "middleTitle": {
+      "type": "string"
+    },
+    "middleDescription": {
+      "type": "blocks"
+    },
+    "readMoreTab": {
+      "type": "blocks"
+    },
+    "faq": {
+      "type": "component",
+      "repeatable": true,
+      "component": "layout.faq"
     }
   }
 }

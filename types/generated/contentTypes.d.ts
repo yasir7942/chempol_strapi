@@ -1199,6 +1199,10 @@ export interface ApiProductCategoryProductCategory
       'manyToMany',
       'api::product.product'
     >;
+    middleTitle: Attribute.String;
+    middleDescription: Attribute.Blocks;
+    readMoreTab: Attribute.Blocks;
+    faq: Attribute.Component<'layout.faq', true>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
