@@ -1155,6 +1155,7 @@ export interface ApiProductProduct extends Schema.CollectionType {
     productSchema: Attribute.Component<'seo.product-schema'>;
     TDSFile: Attribute.Media<'files'>;
     MSDSFile: Attribute.Media<'files'>;
+    table: Attribute.Component<'layout.product-table', true>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

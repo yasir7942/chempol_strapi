@@ -97,6 +97,19 @@ export interface LayoutTextImage extends Schema.Component {
   };
 }
 
+export interface LayoutProductTable extends Schema.Component {
+  collectionName: 'components_layout_product_tables';
+  info: {
+    displayName: 'ProductTable';
+    icon: 'apps';
+  };
+  attributes: {
+    property: Attribute.String;
+    method: Attribute.String;
+    value: Attribute.String;
+  };
+}
+
 export interface LayoutHeadingText extends Schema.Component {
   collectionName: 'components_layout_heading_texts';
   info: {
@@ -160,6 +173,7 @@ declare module '@strapi/types' {
       'seo.product-review': SeoProductReview;
       'layout.top-banner': LayoutTopBanner;
       'layout.text-image': LayoutTextImage;
+      'layout.product-table': LayoutProductTable;
       'layout.heading-text': LayoutHeadingText;
       'layout.heading-text-icon': LayoutHeadingTextIcon;
       'layout.faq': LayoutFaq;

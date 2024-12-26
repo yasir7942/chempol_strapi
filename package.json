@@ -1,8 +1,8 @@
 {
-  "name": "atlantic",
+  "name": "AdminChempol",
   "private": true,
   "version": "0.1.0",
-  "description": "A Strapi application",
+  "description": "A Strapi for chempol admin",
   "scripts": {
     "develop": "strapi develop",
     "start": "strapi start",
