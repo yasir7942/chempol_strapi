@@ -1,11 +1,10 @@
 {
   "kind": "singleType",
-  "collectionName": "contact_uses",
+  "collectionName": "contacts",
   "info": {
-    "singularName": "contact-us",
-    "pluralName": "contact-uses",
-    "displayName": "ContactUs",
-    "description": ""
+    "singularName": "contact",
+    "pluralName": "contacts",
+    "displayName": "Contact"
   },
   "options": {
     "draftAndPublish": true

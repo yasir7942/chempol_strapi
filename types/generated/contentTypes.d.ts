@@ -864,13 +864,12 @@ export interface ApiBlogPageBlogPage extends Schema.SingleType {
   };
 }
 
-export interface ApiContactUsContactUs extends Schema.SingleType {
-  collectionName: 'contact_uses';
+export interface ApiContactContact extends Schema.SingleType {
+  collectionName: 'contacts';
   info: {
-    singularName: 'contact-us';
-    pluralName: 'contact-uses';
-    displayName: 'ContactUs';
-    description: '';
+    singularName: 'contact';
+    pluralName: 'contacts';
+    displayName: 'Contact';
   };
   options: {
     draftAndPublish: true;
@@ -883,13 +882,13 @@ export interface ApiContactUsContactUs extends Schema.SingleType {
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
-      'api::contact-us.contact-us',
+      'api::contact.contact',
       'oneToOne',
       'admin::user'
     > &
       Attribute.Private;
     updatedBy: Attribute.Relation<
-      'api::contact-us.contact-us',
+      'api::contact.contact',
       'oneToOne',
       'admin::user'
     > &
@@ -1344,7 +1343,7 @@ declare module '@strapi/types' {
       'plugin::users-permissions.user': PluginUsersPermissionsUser;
       'api::about-us.about-us': ApiAboutUsAboutUs;
       'api::blog-page.blog-page': ApiBlogPageBlogPage;
-      'api::contact-us.contact-us': ApiContactUsContactUs;
+      'api::contact.contact': ApiContactContact;
       'api::faq-page.faq-page': ApiFaqPageFaqPage;
       'api::home-page.home-page': ApiHomePageHomePage;
       'api::lubricant-additives-uae.lubricant-additives-uae': ApiLubricantAdditivesUaeLubricantAdditivesUae;
