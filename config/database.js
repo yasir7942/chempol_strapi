@@ -33,9 +33,9 @@ module.exports = ({ env }) => {
         database: env('DATABASE_NAME_DEV', 'strapi'),
         user: env('DATABASE_USERNAME_DEV', 'strapi'),
         password: env('DATABASE_PASSWORD_DEV', ''),
-        
+
       },
-      
+
       pool: { min: env.int('DATABASE_POOL_MIN', 2), max: env.int('DATABASE_POOL_MAX', 10) },
     },
     mysql2: {
